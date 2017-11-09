@@ -1,4 +1,4 @@
-Feature B
+This is Feature B
 =========
 
 ---
