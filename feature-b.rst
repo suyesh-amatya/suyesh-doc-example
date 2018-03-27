@@ -1,64 +1,57 @@
 This is Feature B
 =================
+====================
+ReST Quick Reference
+====================
 
----
-__Advertisement :)__
+Underline titles with punctuation
+=================================
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+.. _rst_example:
 
-You will like those projects!
+ReST example markup
+-------------------
 
----
+*Italic* **bold** ``name`` ``function()`` ``expression = 3 + 3``
+`Hyperlink <http://en.wikipedia.org/wiki/Hyperlink>`_ `Link`_
 
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+.. _Link: http://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
+.. image:: https://www.python.org/static/img/python-logo.png
+.. A comment block starts with two periods, can continue indented.
 
+A paragraph is one or more lines of un-indented text, separated
+from the material above and below by blank lines.
 
-## Horizontal Rules
+     “Block quotes look like paragraphs, but are indented with
+     one or more spaces.”
 
-___
+| Because of the pipe characters, this will become one line,
+| And this will become another line, like in poetry.
 
----
+term
+   Definition for the “term”, indented beneath it.
+another term
+   And its definition; any of these definitions can continue on for
+   several lines by — you guessed it! — being similarly indented.
 
-***
+* Each item in a list starts with an asterisk (or “1.”, “a.”, etc).
+* List items can go on for several lines as long as you remember to
+   keep the rest of the list item indented.
 
+Code blocks are introduced by a double-colon and are indented::
 
-## Typographic replacements
+     $ mkdir docs
 
-Enable typographer option to see result.
+Examples using Sphinx markup
+----------------------------
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+A python code block using Sphinx markup:
 
-test.. test... test..... test?..... test!....
+.. code-block:: python
 
-!!!!!! ???? ,,  -- ---
+     import docutils
+     print help(docutils)
 
-"Smartypants, double quotes" and 'single quotes'
+.. note:: This is a note using Sphinx markup.
 
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
+This is a reference to :ref:`rst_example`.
