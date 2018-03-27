@@ -1,12 +1,9 @@
-This is Feature B
-=================
+This is feature B
+=================================
+
 ====================
 ReST Quick Reference
 ====================
-
-Underline titles with punctuation
-=================================
-
 .. _rst_example:
 
 ReST example markup
